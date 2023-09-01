@@ -1,0 +1,36 @@
+//To find the Absolute Difference of the two Diagonals of an Array
+
+int diagonalDifference(vector<vector<int>> arr) {
+    
+     int n=arr.size();
+     
+     int i=0, j=0, p=0, q=n-1;
+     
+     int sum1=0, sum2=0;
+     int ans;
+     
+     for (int x=0; x<n; x++){
+         
+         sum1+= arr[i][j];
+         i++;
+         j++;
+         
+         sum2+= arr[p][q];
+         p++;
+         q--;
+          
+     }
+
+//Absolute Differnce
+     if (sum1>sum2) {
+         
+       ans = sum1-sum2;  
+     }
+     
+     else{
+         ans = sum2-sum1;
+     }
+     
+     return ans;
+
+}
