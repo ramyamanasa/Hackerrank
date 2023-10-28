@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+	// Complete the program
+    
+    string s1, s2;
+    
+    cin>>s1;
+    cin>>s2;
+    
+    //1st Output - length
+    
+    cout<<s1.length()<<" "<<s2.length()<<endl;
+    
+    //2nd output Concatenation
+    
+    cout<<s1+s2<<endl;
+    
+    //3rd output
+    char t;
+    t = s1[0];
+    s1[0] = s2[0];
+    s2[0] = t;
+    
+    cout<<s1<<" "<<s2;
+  
+    return 0;
+}
